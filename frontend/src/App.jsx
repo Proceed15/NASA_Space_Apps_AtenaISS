@@ -53,7 +53,7 @@ function App() {
     </div>
   );
 }
-
+//This is the App component that serves as the main entry point for the ISS Legacy Explorer application. It imports and integrates various components to create a comprehensive user interface that celebrates the 25th anniversary of the International Space Station (ISS). The components included in this file cover a wide range of topics related to the ISS, from its history and assembly to its scientific experiments and future prospects. Each component is designed to provide users with an engaging and informative experience, utilizing images, videos, and interactive elements to showcase the achievements and ongoing activities aboard the ISS.
 export default App;
 // // Compare this snippet from frontend/src/components/ISSTimeline.jsx:
 // // src/components/ISSTimeline.jsx

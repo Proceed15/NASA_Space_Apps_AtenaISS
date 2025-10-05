@@ -2,25 +2,25 @@ import React from "react";
 
 const experiments = [
   {
-    title: "Cristais de Proteínas",
-    desc: "Estudo do crescimento de cristais em microgravidade ajuda a criar novos medicamentos.",
+    title: "Protein Crystals",
+    desc: "Studying crystal growth in microgravity helps create new medicines.",
     //img: "https://images-assets.nasa.gov/image/iss059e001564/iss059e001564~orig.jpg"
     img: "https://images-assets.nasa.gov/image/jsc2022e031226/jsc2022e031226~small.jpg"
   },
   {
-    title: "Plantas no Espaço",
-    desc: "Pesquisas de cultivo em microgravidade ajudam a desenvolver agricultura mais resiliente.",
+    title: "Plants in Space",
+    desc: "Microgravity cultivation research helps develop more resilient agriculture.",
     img: "https://images-assets.nasa.gov/image/KSC-20181127-PH_JBS01_0013/KSC-20181127-PH_JBS01_0013~large.jpg"
     //img: "https://images-assets.nasa.gov/image/iss040e090540/iss040e090540~orig.jpg"
   },
   {
-    title: "Combustão",
-    desc: "Estudos sobre fogo no espaço ajudam a melhorar combustíveis e segurança na Terra.",
+    title: "Combustion",
+    desc: "Studies on fire in space help improve fuels and safety on Earth.",
     img: "https://images-assets.nasa.gov/image/KSC-98pc1850/KSC-98pc1850~medium.jpg"
   },
   {
-    title: "Física de Fluidos",
-    desc: "Experimentos com fluidos em microgravidade revelam novos comportamentos e aplicações.",
+    title: "Fluid Physics",
+    desc: "Experiments with fluids in microgravity reveal new behaviors and applications.",
     video: "https://images-assets.nasa.gov/video/KSC-20191113-MH-CMS01_0001-ISS_Slosh_Tank_Research_Feature-3234338/KSC-20191113-MH-CMS01_0001-ISS_Slosh_Tank_Research_Feature-3234338~large.mp4"
   }
 ];
@@ -28,7 +28,7 @@ const experiments = [
 export default function Experiments() {
   return (
     <section style={{ padding: "40px", background: "#111", color: "#fff" }}>
-      <h2>🔬 Ciência e Tecnologia</h2>
+      <h2>🔬 Science and Technology</h2>
       <div style={{ display: "flex", gap: "20px", flexWrap: "wrap", justifyContent: "center" }}>
         {experiments.map((exp, idx) => (
           <div

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
@@ -24,7 +24,7 @@
       let index = 0;
       function moveSlide(step) {
         const images = document.getElementById("carousel");
-        const total = (images.children.length)/2; // Ajuste para contar vídeos e imagens
+        const total = (images.children.length)/2; // Adjustment to count videos and images
         index = (index + step + total) % total;
         images.style.transform = `translateX(${-index * 100}%)`;
       }

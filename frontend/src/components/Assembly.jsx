@@ -21,61 +21,60 @@ export default function Assembly() {
 }*/
 // src/components/Assembly.jsx
 import React, { useState, useEffect } from "react";
-import { searchImages } from "../services/nasaApi"; // Certifique-se que o caminho está correto
+import { searchImages } from "../services/nasaApi"; // Ensure the path is correct
 
 export default function Assembly() {
-  // Criamos um estado para armazenar a URL da imagem que virá da API
+  // We create a state to store the image URL that will come from the API
   const [imageUrl, setImageUrl] = useState("");
-  // Criamos um estado para controlar a mensagem de carregamento
+  // We create a state to control the loading message
   const [loading, setLoading] = useState(true);
 
-  // useEffect será executado uma vez, quando o componente for montado na tela
+  // useEffect will run once, when the component is mounted on the screen
   useEffect(() => {
-    // Função para buscar os dados
+    // Function to fetch data
     const fetchAssemblyImage = async () => {
       try {
-        // 1. Chama a função de busca da sua API
+        // 1. Calls your API's search function
         const items = await searchImages("ISS Assembly");
 
-        // 2. Verifica se a busca retornou algum resultado
+        // 2. Checks if the search returned any results
         if (items && items.length > 0) {
-          // 3. Pega o primeiro item e extrai o link de preview.
-          // A API retorna uma lista de links para cada imagem. O primeiro (`links[0]`)
-          // é o thumbnail, que é sempre acessível publicamente.
+          // 3. Gets the first item and extracts the preview link.
+          // The API returns a list of links for each image. The first (`links[0]`)
+          // is the thumbnail, which is always publicly accessible.
           const accessibleUrl = items[0].links[0].href;
           setImageUrl(accessibleUrl);
         }
       } catch (error) {
-        console.error("Erro ao buscar imagem da montagem da ISS:", error);
-        // Opcional: Colocar uma imagem padrão em caso de erro
+        console.error("Error fetching ISS assembly image:", error);
+        // Optional: Set a default image in case of error
         // setImageUrl("/imagem-de-erro.jpg");
       } finally {
-        setLoading(false); // Termina o carregamento, com sucesso ou erro
+        setLoading(false); // Ends loading, with success or error
       }
     };
 
     fetchAssemblyImage();
-  }, []); // O array vazio [] garante que isso rode apenas uma vez
+  }, []); // The empty array [] ensures this runs only once
 
   return (
     <section style={{ padding: "40px", background: "#222", color: "#fff" }}>
-      <h2>🛠️ Montagem da Estação</h2>
+      <h2>🛠️ Station Assembly</h2>
       <p>
-        Entre 2000 e 2011, a ISS foi montada em órbita, peça por peça, até se
-        tornar o maior laboratório no espaço.
+        Between 2000 and 2011, the ISS was assembled in orbit, piece by piece, until it became the largest laboratory in space.
       </p>
       <div style={{ overflowX: "scroll", overflowY: "scroll", whiteSpace: "nowrap" }}>
-        {/* Lógica de exibição: */}
+        {/* Display logic: */}
         {loading ? (
-          <p>Carregando imagem...</p>
+          <p>Loading image...</p>
         ) : imageUrl ? (
           <img
             src={imageUrl}
-            alt="Montagem da Estação Espacial Internacional"
+            alt="International Space Station Assembly"
             style={{ width: "100%", borderRadius: "10px" }}
           />
         ) : (
-          <p>Não foi possível carregar a imagem.</p>
+          <p>Could not load image.</p>
         )}
       </div>
     </section>

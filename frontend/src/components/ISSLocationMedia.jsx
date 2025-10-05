@@ -16,7 +16,7 @@ export default function ISSLocationMedia() {
 
   return (
     <section style={{ padding: "40px", background: "#222", color: "#fff" }}>
-      <h2>🛰️ ISS Hoje</h2>
+      <h2>🛰️ ISS Now</h2>
       {position ? (
         <>
           <p>
@@ -31,7 +31,7 @@ export default function ISSLocationMedia() {
           ></iframe>
         </>
       ) : (
-        <p>Carregando posição...</p>
+        <p>Loading Current Position...</p>
       )}
     </section>
   );

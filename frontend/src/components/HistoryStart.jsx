@@ -5,15 +5,15 @@ export default function HistoryStart()
 {
   return (
     <section style={{ padding: "40px", background: "#111", color: "#fff" }}>
-      <h2>🚀 O Começo: Lançamento da ISS</h2>
+      <h2>🚀 The Beginning: Launch of the ISS</h2>
       <p>
-        Em 1998, o primeiro módulo, Zarya, foi lançado. A partir daí começou a maior obra de engenharia em órbita da humanidade.
-        In 1999, a primeira tripulação, a Expedição 1, chegou à estação, marcando o início de uma presença humana contínua no espaço desde então.
-        Em 2000, a Expedição 1, composta pelos astronautas russos Yuri Gidzenko e Sergei Krikalev, e pelo astronauta americano William Shepherd, chegou à estação.
+        In 1998, the first module, Zarya, was launched. From there began humanity's greatest engineering feat in orbit.
+        In 1999, the first crew, Expedition 1, arrived at the station, marking the beginning of a continuous human presence in space ever since.
+        In 2000, Expedition 1, composed of Russian cosmonauts Yuri Gidzenko and Sergei Krikalev, and American astronaut William Shepherd, arrived at the station.
       </p>
       <img
         src="https://images-assets.nasa.gov/image/KSC-99pp1356/KSC-99pp1356~medium.jpg"
-        alt="Primeira tripulação da ISS"
+        alt="First ISS crew"
         style={{ width: "80%", borderRadius: "10px", marginTop: "20px" }}
       />
     </section>

@@ -26,7 +26,7 @@ function App() {
       <Header />
       <header style={{ textAlign: "center", padding: "20px", background: "#0b3d91", color: "white" }}>
         <h1>ISS Legacy Explorer</h1>
-        <p>Uma jornada visual pelos 25 anos da Estação Espacial Internacional</p>
+        <p>A Visual Journey through the 25 years of Continuous Exploration of the ISS</p>
       </header>
       <Hero />
       <HistoryStart />
@@ -48,7 +48,7 @@ function App() {
       <FutureISS />      
 
       <footer style={{ textAlign: "center", padding: "20px", background: "#0b3d91", color: "white" }}>
-        <p>🌍 NASA Space Apps Challenge - ISS 25 anos</p>
+        <p>🌍 NASA Space Apps Challenge - ISS 25 Years Anniversary</p>
       </footer>
     </div>
   );

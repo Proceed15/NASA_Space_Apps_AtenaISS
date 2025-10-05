@@ -1,30 +1,30 @@
 import React from "react";
 
-// ATENÇÃO: As URLs das imagens foram trocadas por links públicos para garantir o carregamento.
+// ATTENTION: Image URLs have been replaced with public links to ensure loading.
 const walks = [
    {
-    title: "Instalação de Painéis Solares",
-    desc: "Astronautas instalaram grandes painéis solares, garantindo energia para toda a estação.",
+    title: "Solar Panel Installation",
+    desc: "Astronauts installed large solar panels, ensuring power for the entire station.",
     img: "https://images-assets.nasa.gov/image/sts082-719-002/sts082-719-002~large.jpg"
    },
   { 
-    title: "Manutenção da Estação",
-    desc: "Missões de reparo e manutenção asseguram a segurança e o funcionamento da ISS.",
+    title: "Station Maintenance",
+    desc: "Repair and maintenance missions ensure the safety and operation of the ISS.",
     img: "https://images-assets.nasa.gov/image/iss050e057428/iss050e057428~large.jpg"
   },
   {
-    title: "Experimentos no Espaço",
-    desc: "Algumas EVAs são dedicadas à instalação de novos experimentos e tecnologias externas.",
+    title: "Experiments in Space",
+    desc: "Some EVAs are dedicated to installing new external experiments and technologies.",
     img: "https://images-assets.nasa.gov/image/0201584/0201584~large.jpg"
   },
   {
-    title: 'Reparos no Exterior',
-    desc: 'Astronautas realizam reparos críticos em equipamentos externos da ISS durante EVAs.',
+    title: 'Exterior Repairs',
+    desc: 'Astronauts perform critical repairs on external ISS equipment during EVAs.',
     img: 'https://images-assets.nasa.gov/image/0701899/0701899~large.jpg'
   },
   {
-    title: 'Exploração e Missão',
-    desc: 'Astronautas realizam caminhadas espaciais para explorar e completar missões vitais na ISS.',
+    title: 'Exploration and Mission',
+    desc: 'Astronauts conduct spacewalks to explore and complete vital missions on the ISS.',
     video: 'https://images-assets.nasa.gov/video/ksc_080404_iss/ksc_080404_iss~orig.mp4'
   }
 ];
@@ -63,8 +63,8 @@ export default function SpaceWalks() {
     <section style={{ padding: "40px", background: "#000", color: "#fff" }}>
       <h2>👨‍🚀 Spacewalks (EVAs)</h2>
       <p>
-        As atividades extraveiculares, conhecidas como spacewalks, permitem que astronautas deixem a ISS para realizar
-        reparos, instalar novos módulos e conduzir experimentos. Cada EVA é fruto de intenso treinamento no Neutral
+        Extravehicular activities, known as spacewalks, allow astronauts to leave the ISS to perform
+        repairs, install new modules, and conduct experiments. Each EVA is the result of intense training at the Neutral
         Buoyancy Lab.
       </p>
       

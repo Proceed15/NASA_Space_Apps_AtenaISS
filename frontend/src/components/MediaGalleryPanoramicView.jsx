@@ -4,15 +4,15 @@ import PanoramicMotion from "./useful/PanoramicMotion";
 const media = [
   {
     src: "https://images-assets.nasa.gov/image/KSC-98pc1850/KSC-98pc1850~medium.jpg",
-    title: "Endeavour Chegando depois de Uma Missão Bem Sucedida"
+    title: "Endeavour Arriving after a Successful Mission"
   },
   {
     src: "https://images-assets.nasa.gov/image/iss062e005579/iss062e005579~orig.jpg",
-    title: "ISS vista do espaço"
+    title: "ISS view from space"
   },
   {
     src: "https://images-assets.nasa.gov/image/iss040e078968/iss040e078968~large.jpg",
-    title: "Pôr do sol visto da ISS"
+    title: "Sunset from ISS"
   }
 ];
 

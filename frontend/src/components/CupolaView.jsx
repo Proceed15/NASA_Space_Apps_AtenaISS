@@ -1,8 +1,8 @@
 // src/components/CupulaView.jsx
 
 import React, { useState, useEffect } from 'react';
-import { searchImages } from '../services/nasaApi'; // Importe sua função da API
-import ImageCarousel from './useful/ImageCarousel'; // Importe o carrossel que criamos
+import { searchImages } from '../services/nasaApi'; // Import your API function
+import ImageCarousel from './useful/ImageCarousel'; // Import the carousel we created
 
 export default function CupulaView() {
   const [cupolaImages, setCupolaImages] = useState([]);
@@ -14,20 +14,20 @@ export default function CupulaView() {
         const items = await searchImages('Cupola Earth View');
 
         if (items && items.length > 0) {
-          // 1. Pega os 6 primeiros resultados
+          // 1. Gets the first 6 results
           const firstSixItems = items.slice(0, 8);
 
-          // 2. Transforma os dados para o formato que o ImageCarousel espera
+          // 2. Transforms the data to the format that ImageCarousel expects
           const formattedImages = firstSixItems.map((item) => ({
-            id: item.data[0].nasa_id, // ID único para a 'key' do React
-            src: item.links[0].href, // A URL da imagem de preview
-            alt: item.data[0].title, // O texto alternativo
+            id: item.data[0].nasa_id, // Unique ID for React's 'key'
+            src: item.links[0].href, // The preview image URL
+            alt: item.data[0].title, // The alternative text
           }));
 
           setCupolaImages(formattedImages);
         }
       } catch (error) {
-        console.error('Erro ao buscar imagens da Cúpula:', error);
+        console.error('Error fetching Cupola images:', error);
       } finally {
         setLoading(false);
       }
@@ -38,11 +38,11 @@ export default function CupulaView() {
 
   return (
     <section style={{ padding: '40px', background: '#111', color: '#fff' }}>
-      <h2>🔭 Visão da Cúpula</h2>
-      <p>A Cúpula oferece a visão mais espetacular da Terra a partir da ISS.</p>
+      <h2>🔭 Cupola View</h2>
+      <p>The Cupola offers the most spectacular view of Earth from the ISS.</p>
       
       {loading ? (
-        <p>Carregando imagens...</p>
+        <p>Loading images...</p>
       ) : (
         <ImageCarousel images={cupolaImages} />
       )}

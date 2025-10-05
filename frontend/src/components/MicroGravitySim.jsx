@@ -1,7 +1,7 @@
 import React from "react";
 
 const floatingStyle = {
-  width: "80px",
+  width: "488px",
   animation: "float 6s ease-in-out infinite"
 };
 
@@ -20,8 +20,8 @@ export default function MicroGravitySim() {
           style={floatingStyle}
         />
         <img
-          src="https://images-assets.nasa.gov/image/iss059e119328/iss059e119328~orig.jpg"
-          alt="Aurora da ISS"
+          src="https://images-assets.nasa.gov/image/iss009e29620/iss009e29620~large.jpg"
+          alt="Astronauta flutuando na ISS"
           style={floatingStyle}
         />
       </div>

@@ -1,10 +1,6 @@
 // src/components/HistoryStart.jsx
 import React from "react";
-import missionPhoto from '../assets/images/9474342032_7035b4ab6f_o.jpg';
-export function MissionImage() 
-{
-   return <img src={missionPhoto} alt="Primeira tripulação da ISS" />;
-}
+
 export default function HistoryStart() 
 {
   return (
@@ -16,7 +12,7 @@ export default function HistoryStart()
         Em 2000, a Expedição 1, composta pelos astronautas russos Yuri Gidzenko e Sergei Krikalev, e pelo astronauta americano William Shepherd, chegou à estação.
       </p>
       <img
-        src="{missionPhoto}"
+        src="https://images-assets.nasa.gov/image/KSC-99pp1356/KSC-99pp1356~medium.jpg"
         alt="Primeira tripulação da ISS"
         style={{ width: "80%", borderRadius: "10px", marginTop: "20px" }}
       />

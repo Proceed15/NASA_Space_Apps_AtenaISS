@@ -28,8 +28,8 @@ export default function Header() {
         <a href="https://api.wheretheiss.at/v1/satellites/25544" target="_blank" rel="noopener noreferrer">
           Current ISS Position
         </a>
-        <a href="http://localhost:3001/api/iss" target="_blank" rel="noopener noreferrer">
-          Our API
+        <a href="https://images.nasa.gov/" target="_blank" rel="noopener noreferrer">
+          NASA Historical Images API
         </a>
       </nav>
 

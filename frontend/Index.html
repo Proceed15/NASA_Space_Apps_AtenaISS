@@ -12,93 +12,10 @@
         background-color: #0b0c10;
         color: #fff;
       }
-      .links-container {
-        text-align: center;
-        margin: 20px 0;
-        text-align: center;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        width: 100vw;
-        top: 114px;
-        z-index: 1;
-      }
-      .links-container a {
-        display: inline-block;
-        margin: 10px;
-        padding: 10px 20px;
-        background: #1f2833;
-        color: #66fcf1;
-        text-decoration: none;
-        border-radius: 6px;
-        transition: 0.3s;
-      }
-      .links-container a:hover {
-        background: #45a29e;
-        color: white;
-      }
-      /* Carrossel simples */
-      .carousel {
-        position: relative;
-        max-width: 100%;
-        margin: 30px auto;
-        overflow: hidden;
-      }
-      .carousel-images {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-        align-items: center;
-      }
-      .carousel-images img {
-        width: 50vw;
-        height: fit-content;
-        border-radius: 10px;
-      }
-      .carousel-images video {
-        width: 50vw;
-        height: fit-content;
-        border-radius: 10px;
-      }
-      .carousel-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.5);
-        border: none;
-        color: white;
-        padding: 10px;
-        cursor: pointer;
-        border-radius: 50%;
-      }
-      .carousel-btn.left {
-        left: 10px;
-      }
-      .carousel-btn.right {
-        right: 10px;
-      }
     </style>
   </head>
   <body>
-    <!-- Links úteis -->
-    <div class="links-container">
-      <a href="https://www.nasa.gov/mission_pages/station/main/index.html" target="_blank">Saiba mais na NASA</a>
-      <a href="https://api.wheretheiss.at/v1/satellites/25544" target="_blank">Posição Atual da ISS</a>
-      <a href="http://localhost:3001/api/iss" target="_blank">Nossa API</a>
-    </div>
-
-    <!-- Carrossel -->
-    <div class="carousel">
-      <div class="carousel-images" id="carousel">
-        <img src="https://images-assets.nasa.gov/image/iss038e042125/iss038e042125~large.jpg" alt="Vista da Cupola" />
-        <video src="https://images-assets.nasa.gov/video/NASA_Explorers_Microgravity-Trailer/NASA_Explorers_Microgravity-Trailer~large.mp4" autoplay muted loop alt="Lançamento de foguete"></video>
-        <img src="https://images-assets.nasa.gov/image/JSC2000-04066/JSC2000-04066~large.jpg" alt="Primeira tripulação da ISS" />
-        <video src="https://images-assets.nasa.gov/video/jsc2023m000162_SCIENCETASIA%20FINAL_v07_HighQuality_1080_MP4/jsc2023m000162_SCIENCETASIA%20FINAL_v07_HighQuality_1080_MP4~large.mp4" autoplay muted loop alt="Experimento em microgravidade"></video>
-        <img src="https://images-assets.nasa.gov/image/iss040e090540/iss040e090540~orig.jpg" alt="Aurora vista da ISS" />
-        <img src="https://images-assets.nasa.gov/image/iss062e005579/iss062e005579~large.jpg" alt="ISS sobre a Terra" />
-      </div>
-      <button class="carousel-btn left" onclick="moveSlide(-1)">❮</button>
-      <button class="carousel-btn right" onclick="moveSlide(1)">❯</button>
-    </div>
+   
 
     <!-- React render -->
     <div id="root"></div>

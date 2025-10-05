@@ -1,6 +1,7 @@
 // src/App.jsx
 import React from "react";
 import HistoryStart from "./components/HistoryStart";
+import Header from "./components/useful/header/Header";
 import Assembly from "./components/Assembly";
 import Hero from "./components/Hero";
 import CupolaView from "./components/CupolaView";
@@ -22,6 +23,7 @@ import MediaGalleryPanoramicView from "./components/MediaGalleryPanoramicView";
 function App() {
   return (
     <div>
+      <Header />
       <header style={{ textAlign: "center", padding: "20px", background: "#0b3d91", color: "white" }}>
         <h1>ISS Legacy Explorer</h1>
         <p>Uma jornada visual pelos 25 anos da Estação Espacial Internacional</p>

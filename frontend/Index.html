@@ -42,12 +42,12 @@
         transition: transform 0.5s ease-in-out;
       }
       .carousel-images img {
-        width: 50%;
+        width: 50vw;
         height: auto;
         border-radius: 10px;
       }
       .carousel-images video {
-        width: 50%;
+        width: 50vw;
         height: auto;
         border-radius: 10px;
       }
@@ -99,7 +99,7 @@
       let index = 0;
       function moveSlide(step) {
         const images = document.getElementById("carousel");
-        const total = images.children.length;
+        const total = (images.children.length)/2; // Ajuste para contar vídeos e imagens
         index = (index + step + total) % total;
         images.style.transform = `translateX(${-index * 100}%)`;
       }

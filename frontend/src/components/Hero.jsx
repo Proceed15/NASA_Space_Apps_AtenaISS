@@ -22,12 +22,15 @@ export default function Hero() {
   const imageContainerStyle = {
     flex: 1, // Permite que o container da imagem cresça
     maxWidth: '50%',
+    maxHeight: '380px',
+    overflow: 'hidden',
   };
 
   const imageStyle = {
-    width: '100%',
+    height: '400px', // Altura fixa para a imagem
     borderRadius: '15px', // Bordas arredondadas como na referência
     display: 'block',
+    botton: '-15px',
   };
 
   const titleStyle = {

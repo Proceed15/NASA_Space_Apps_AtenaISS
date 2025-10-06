@@ -1,3 +1,8 @@
+Photo & Media Reference
+All photos and media used in this project were sourced from the official Flickr profile of the NASA Johnson Space Center. The assets are published on behalf of NASA and made available for public use under their media usage guidelines.
+ * Primary Source: NASA Johnson Space Center on Flickr
+ * Link: https://www.flickr.com/photos/nasa2explore/
+
 Jonhson: https://www.flickr.com/photos/nasa2explore/albums/with/72177720298054485
 
 Photo: https://www.flickr.com/photos/nasa2explore/54775907677/in/album-72177720319898071
